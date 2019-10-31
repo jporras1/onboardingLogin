@@ -12,6 +12,10 @@
 		3B206912236A692500403DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B206911236A692500403DB0 /* Assets.xcassets */; };
 		3B206915236A692500403DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B206913236A692500403DB0 /* LaunchScreen.storyboard */; };
 		3B206920236A692600403DB0 /* onboardingLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20691F236A692600403DB0 /* onboardingLoginUITests.swift */; };
+		3B20692E236A788400403DB0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20692D236A788400403DB0 /* Extensions.swift */; };
+		3B206930236A7B2800403DB0 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20692F236A7B2800403DB0 /* PageCell.swift */; };
+		3B206933236A7FE900403DB0 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B206932236A7FE900403DB0 /* Page.swift */; };
+		3B206935236B221400403DB0 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B206934236B221400403DB0 /* LoginCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		3B20691B236A692600403DB0 /* onboardingLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onboardingLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B20691F236A692600403DB0 /* onboardingLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingLoginUITests.swift; sourceTree = "<group>"; };
 		3B206921236A692600403DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B20692D236A788400403DB0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3B20692F236A7B2800403DB0 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		3B206932236A7FE900403DB0 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		3B206934236B221400403DB0 /* LoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				3B20690A236A692200403DB0 /* AppDelegate.swift */,
-				3B20690C236A692300403DB0 /* ViewController.swift */,
+				3B206931236A7FC400403DB0 /* Model */,
+				3B20692C236A77BA00403DB0 /* View */,
+				3B20692B236A77B200403DB0 /* Controller */,
+				3B20692A236A77AD00403DB0 /* Utils */,
 				3B206911236A692500403DB0 /* Assets.xcassets */,
 				3B206913236A692500403DB0 /* LaunchScreen.storyboard */,
 				3B206916236A692500403DB0 /* Info.plist */,
@@ -91,6 +102,39 @@
 				3B206921236A692600403DB0 /* Info.plist */,
 			);
 			path = onboardingLoginUITests;
+			sourceTree = "<group>";
+		};
+		3B20692A236A77AD00403DB0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3B20692D236A788400403DB0 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3B20692B236A77B200403DB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B20690C236A692300403DB0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B20692C236A77BA00403DB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B20692F236A7B2800403DB0 /* PageCell.swift */,
+				3B206934236B221400403DB0 /* LoginCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B206931236A7FC400403DB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B206932236A7FE900403DB0 /* Page.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B20690D236A692300403DB0 /* ViewController.swift in Sources */,
+				3B20692E236A788400403DB0 /* Extensions.swift in Sources */,
+				3B206930236A7B2800403DB0 /* PageCell.swift in Sources */,
 				3B20690B236A692200403DB0 /* AppDelegate.swift in Sources */,
+				3B206933236A7FE900403DB0 /* Page.swift in Sources */,
+				3B206935236B221400403DB0 /* LoginCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
