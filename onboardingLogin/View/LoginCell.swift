@@ -11,13 +11,14 @@ import UIKit
 class LoginCell: UICollectionViewCell {
     //MARK: Poperties
     static let reuseIdentifier = "LoginCellReuseIdentifier"
+    var delegate: LoginViewControllerDelegate?
     
     let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "logo")
         return imageView
     }()
-    
+//    let emailTextField: LeftPaddedTextField = {  //using this custom textfield to be able to add left spacing
     let emailTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter Email"
@@ -35,11 +36,12 @@ class LoginCell: UICollectionViewCell {
         return textField
     }()
     
-    let loginButton: UIButton = {
+    lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .orange
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     
@@ -67,6 +69,10 @@ class LoginCell: UICollectionViewCell {
         emailTextField.anchor_(logoImageView.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 8, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
         passwordTextField.anchor_(emailTextField.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 16, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
         loginButton.anchor_(passwordTextField.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 16, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
+    }
+    
+    @objc func handleLogin(){
+        delegate?.finishLoggingIn()
     }
     
 }
