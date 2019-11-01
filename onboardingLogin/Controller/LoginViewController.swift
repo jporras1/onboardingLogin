@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginViewControllerDelegate {
+protocol LoginViewControllerDelegate: class {
     func finishLoggingIn()
 }
 
@@ -142,7 +142,6 @@ class LoginViewController: UIViewController {
         print(pageNumber)
         pageControl.currentPage = pageNumber
         if pageNumber == pages.count{
-            //print("annimate controls off screen")
             moveControlConstraintsOffScreen()
         }else{
             pageControlBottomAnchor?.constant = 0
@@ -193,7 +192,13 @@ extension LoginViewController: UICollectionViewDelegateFlowLayout{
 
 extension LoginViewController: LoginViewControllerDelegate{
     func finishLoggingIn() {
-        print("Finish loggin in from Login Controller")
+        print("Finish logging in from Login Controller")
+        let rootViewController = UIApplication.shared.keyWindow?.rootViewController
+        guard let mainNavigationController = rootViewController as? MainNavigationController else {return}
+        mainNavigationController.viewControllers = [HomeController()]
+        
+        UserDefaults.standard.setIsLoggedIn(value: true)
+        
         dismiss(animated: true, completion: nil)
     }
 }

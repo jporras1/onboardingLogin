@@ -18,6 +18,8 @@
 		3B206935236B221400403DB0 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B206934236B221400403DB0 /* LoginCell.swift */; };
 		3B206937236B3BEA00403DB0 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B206936236B3BEA00403DB0 /* LeftPaddedTextField.swift */; };
 		3BB8F27B236BC63D00CC7E1C /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8F27A236BC63D00CC7E1C /* MainNavigationController.swift */; };
+		3BB8F27D236C906F00CC7E1C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8F27C236C906F00CC7E1C /* HomeController.swift */; };
+		3BB8F27F236C936C00CC7E1C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8F27E236C936C00CC7E1C /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		3B206934236B221400403DB0 /* LoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		3B206936236B3BEA00403DB0 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
 		3BB8F27A236BC63D00CC7E1C /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		3BB8F27C236C906F00CC7E1C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3BB8F27E236C936C00CC7E1C /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3B20692D236A788400403DB0 /* Extensions.swift */,
+				3BB8F27E236C936C00CC7E1C /* UserDefaults.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				3B20690C236A692300403DB0 /* LoginViewController.swift */,
 				3BB8F27A236BC63D00CC7E1C /* MainNavigationController.swift */,
+				3BB8F27C236C906F00CC7E1C /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 				3BB8F27B236BC63D00CC7E1C /* MainNavigationController.swift in Sources */,
 				3B206930236A7B2800403DB0 /* PageCell.swift in Sources */,
 				3B20690B236A692200403DB0 /* AppDelegate.swift in Sources */,
+				3BB8F27D236C906F00CC7E1C /* HomeController.swift in Sources */,
+				3BB8F27F236C936C00CC7E1C /* UserDefaults.swift in Sources */,
 				3B206933236A7FE900403DB0 /* Page.swift in Sources */,
 				3B206937236B3BEA00403DB0 /* LeftPaddedTextField.swift in Sources */,
 				3B206935236B221400403DB0 /* LoginCell.swift in Sources */,

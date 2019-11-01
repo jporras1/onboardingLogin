@@ -11,7 +11,7 @@ import UIKit
 class LoginCell: UICollectionViewCell {
     //MARK: Poperties
     static let reuseIdentifier = "LoginCellReuseIdentifier"
-    var delegate: LoginViewControllerDelegate?
+    weak var delegate: LoginViewControllerDelegate?
     
     let logoImageView: UIImageView = {
         let imageView = UIImageView()
